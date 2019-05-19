@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import com.meta.adbhelper.CenterCommonTab?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.meta.adbhelper.controller.Controller"
+            fx:id="rootView">
+    <center>
+        <TabPane fx:id="center_panel">
+            <CenterCommonTab closable="false" text="常用1"/>
+            <Tab closable="false" text="常用"/>
+            <Tab closable="false" text="设备相关"/>
+            <Tab closable="false" text="包相关"/>
+            <Tab closable="false" text="辅助功能"/>
+            <Tab closable="false" text="控制面板"/>
+        </TabPane>
+    </center>
+    <top>
+        <HBox alignment="CENTER" fx:id="top_panel">
+            <Button text="刷新ADB连接"/>
+            <Button text="WiFi连接ADB"/>
+            <Button text="连接网络ADB"/>
+            <Button text="网络ADB管理"/>
+        </HBox>
+    </top>
+    <left>
+        <VBox fx:id="left_panel">
+            <Button text="全选"/>
+            <Button text="管理"/>
+            <ListView fx:id="left_list_panel">
+                <Label text="努比亚"/>
+                <Label text="一加 6 9.0"/>
+                <Label text="华为 meta20 Pro"/>
+                <Label text="vivo x9"/>
+                <Label text="OPPO V9"/>
+                <Label text="小米 9"/>
+            </ListView>
+        </VBox>
+    </left>
+    <right>
+        <TabPane fx:id="right_panel">
+            <Tab closable="false" text="状态"/>
+            <Tab closable="false" text="信息"/>
+            <Tab closable="false" text="脚本"/>
+        </TabPane>
+    </right>
+    <bottom>
+        <TabPane fx:id="bottom_panel">
+            <Tab closable="false" text="执行结果"/>
+            <Tab closable="false" text="历史记录"/>
+            <Tab closable="false" text="脚本栏"/>
+        </TabPane>
+    </bottom>
+</BorderPane>
