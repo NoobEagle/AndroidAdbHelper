@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
+<?import com.meta.adbhelper.views.CenterCommonTab?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
-<?import com.meta.adbhelper.CenterCommonTab?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.meta.adbhelper.controller.Controller"
-            fx:id="rootView">
+<BorderPane fx:id="rootView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.meta.adbhelper.controller.Controller">
     <center>
         <TabPane fx:id="center_panel">
             <CenterCommonTab closable="false" text="常用1"/>
@@ -25,7 +19,7 @@
         </TabPane>
     </center>
     <top>
-        <HBox alignment="CENTER" fx:id="top_panel">
+        <HBox fx:id="top_panel" alignment="CENTER">
             <Button text="刷新ADB连接"/>
             <Button text="WiFi连接ADB"/>
             <Button text="连接网络ADB"/>

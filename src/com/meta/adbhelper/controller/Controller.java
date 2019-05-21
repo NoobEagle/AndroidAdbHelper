@@ -1,11 +1,10 @@
 package com.meta.adbhelper.controller;
 
-import com.meta.adbhelper.Context;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TabPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 public class Controller {
     public TabPane center_panel;
@@ -14,6 +13,7 @@ public class Controller {
     public ListView left_list_panel;
     public TabPane right_panel;
     public TabPane bottom_panel;
+    public BorderPane rootView;
 
 
     /**
@@ -31,7 +31,7 @@ public class Controller {
      * 初始化中间的布局
      */
     private void initCenterView() {
-        CenterController.initViews(center_panel);
+        CenterController.initCenterViews(center_panel);
     }
 
     /**
