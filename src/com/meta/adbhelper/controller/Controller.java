@@ -82,10 +82,12 @@ public class Controller {
             clickRefresh();
         } else {
             DeviceInfo deviceInfo = AdbBridge.onLineDevicesMap.get(newValue);
-            if (singleDeviceInfo == null) {
-                singleDeviceInfo = new SingleDeviceInfoImpl(device_info_tab, deviceInfo);
-            } else {
-                singleDeviceInfo.updateInfo(deviceInfo);
+            if (device_info_tab != null) {
+                if (singleDeviceInfo == null) {
+                    singleDeviceInfo = new SingleDeviceInfoImpl(device_info_tab, deviceInfo);
+                } else {
+                    singleDeviceInfo.updateInfo(deviceInfo);
+                }
             }
         }
         System.out.println("选中的设备：" + newValue);
