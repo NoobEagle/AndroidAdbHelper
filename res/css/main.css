@@ -1,0 +1,31 @@
+.root {
+    -fx-font-size: 11pt;
+    -fx-background: #666666;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+.full-parent {
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+.bg_red {
+    -fx-background-color: RED;
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+.tab {
+    -fx-pref-height: 30px;
+}
+
+.list-cell {
+    /*-fx-background-color: #666666;*/
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 0 0 0; /* 0 3 0 3 */
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            stylesheets="@/css/main.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.meta.adbhelper.controller.Controller">
+    <center>
+
+        <TabPane styleClass="bg_red">
+            <Tab closable="false" text="手机工具">
+                <SplitPane dividerPositions="0.3">
+
+                    <ListView fx:id="device_list">
+                        <Button text="刷新" onAction="#clickRefresh"/>
+                    </ListView>
+                    <TabPane>
+                        <Tab closable="false" text="信息" fx:id="device_info_tab">
+                            <Button text="信息"/>
+                        </Tab>
+                        <Tab closable="false" text="工具" fx:id="device_tool_tab">
+                            <Button text="工具"/>
+                        </Tab>
+                        <Tab closable="false" text="控制面板" fx:id="device_control_tab">
+                            <Button text="控制面板"/>
+                        </Tab>
+                        <Tab closable="false" text="Apk管理" fx:id="device_apk_manager_tab">
+                            <Button text="Apk管理"/>
+                        </Tab>
+                        <Tab closable="false" text="文件管理" fx:id="device_file_manager_tab">
+                            <Button text="文件管理"/>
+                        </Tab>
+                        <Tab closable="false" text="日志" fx:id="device_log_tab">
+                            <Button text="日志"/>
+                        </Tab>
+                    </TabPane>
+                </SplitPane>
+            </Tab>
+            <Tab closable="false" text="Apk信息">
+                <Button text="拖拽Apk到此"/>
+
+            </Tab>
+            <Tab closable="false" text="批量操作">
+            </Tab>
+        </TabPane>
+
+    </center>
+    <right>
+        <ListView>
+            <Button text="好"/>
+        </ListView>
+    </right>
+    <bottom>
+        <TabPane prefHeight="150.0">
+            <Tab closable="false" text="执行结果">
+
+            </Tab>
+        </TabPane>
+    </bottom>
+</BorderPane>

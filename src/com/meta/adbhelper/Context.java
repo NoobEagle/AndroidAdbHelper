@@ -9,4 +9,8 @@ public class Context {
     public static void setStage(Stage stage) {
         Context.stage = stage;
     }
+
+    public static Stage getStage() {
+        return stage;
+    }
 }
